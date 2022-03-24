@@ -35,6 +35,10 @@ if(!empty($_GET))
     {
        // Je renvoi sur sessions
         session_destroy(); 
+        setcookie('email');
+        unset($_COOKIE['email']);
+        setcookie('password');
+        unset($_COOKIE['password']);
         header('location:sessions.php');
     }
   }
