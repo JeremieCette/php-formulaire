@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: white;
+}
+.btn-green{
+    background-color: #39ff14 ;
+    color: antiquewhite;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+}
+.m-5{
+    margin: 0.5em;
+}
+.red{
+    color: red;
+}
+.green{
+    color: #39ff14 ;
+}
+.btn-clignote  {
+animation-duration: 2s;
+animation-name: clignoter;
+animation-iteration-count: infinite;
+transition: none;
+}
+@keyframes clignoter {
+ 0%   { opacity:1; }
+ 40%   {opacity:0; }
+ 100% { opacity:1; }
+}
