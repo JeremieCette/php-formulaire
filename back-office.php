@@ -15,7 +15,7 @@
     ?>
 <body class="container">
     <div>
-        <h1 class="green">Mes articles</h1>
+        <h3 class="green">Mes articles</h3>
         <a href="create-post.php" class="btn btn-success mt-4 mx-2"><i class="fa-solid fa-pen"> </i> Create post</a>
         <a href="form.php" class="btn btn-success mt-4 mx-2">Delete with form</a>
         <a href="fileForm.php" class="btn btn-success mt-4 mx-2">Send image</a>

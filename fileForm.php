@@ -14,21 +14,26 @@ $token = $_SESSION['token']; ?>
         <input type="hidden" name="token" value="<?=$token?>"> 
         <input type="file" name="photo" required/>  
     </div>
-    <div class="form-example">
-        <input class="btn btn-green mt-3" type="submit" value="Send!">
+    <div class="row">
+        <div class="form-example col-1">
+            <input class="btn btn-green mt-3" type="submit" value="Send!">
+        </div>
+        <div class="col-1">
+            <a class="btn btn-green mt-3" href="mon-compte.php">Retour</a>
+        </div>
     </div>
     </form>
+    
 </div>
 
 <?php
-// ************************************** Fonction *********************************************
-function kodex_random_string($length=20){
-    $chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $string = '';
-    for($i=0; $i<$length; $i++){
-        $string .= $chars[rand(0, strlen($chars)-1)];
-    }
-    return $string;
+/********************************************************************
+***************************  Fonctions  *****************************
+*********************************************************************/
+//   Fonction pour renvoyer une date
+function dateNow(){
+    $now = date("m-d-y-His");
+    return $now;
 }
 
 // Répertoire pour les photos
@@ -59,8 +64,9 @@ if (isset($_FILES['photo'])){
                 $nameArray = explode('.',$name);
                 // J'utilise la premiere partie de $name
                 $name = $nameArray[0];
+                $date = dateNow();
                 // Je renomme mon fichier avec une fonction aleatoire
-                $name = $name."_".kodex_random_string($length=5).".".$ext;
+                $name = $name."_".$date.".".$ext;
                 // Je déplace la photo dans mon dossier
                 $move = move_uploaded_file($tmp_name, "$uploads_dir/$name");
                 } else {

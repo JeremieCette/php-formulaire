@@ -8,8 +8,13 @@
         <label class='green mt-3' for="file">Nom du fichier après renommage: </label>
         <input type="text" name="fileR" id="fileR" >
     </div>
-    <div class="form-example">
-        <input class="btn btn-green mt-3" type="submit" />
+    <div class="row">
+        <div class="form-example col-1">
+            <input class="btn btn-green mt-3" type="submit" value="Send!">
+        </div>
+        <div class="col-1">
+            <a class="btn btn-green mt-3" href="mon-compte.php">Retour</a>
+        </div>
     </div>
 </form>
 </div>

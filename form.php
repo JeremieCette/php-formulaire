@@ -19,8 +19,13 @@ $token = $_SESSION['token']; ?>
         <input type="hidden" name="token" value="<?=$token?>" />
         <!-- Je recupere la valeur le token en post -->
     </div>
-    <div class="form-example">
-        <input class="btn btn-green mt-3" type="submit" value="Subscribe!">
+    <div class="row">
+        <div class="form-example col-1">
+            <input class="btn btn-green mt-3" type="submit" value="Send!">
+        </div>
+        <div class="col-1">
+            <a class="btn btn-green mt-3" href="mon-compte.php">Retour</a>
+        </div>
     </div>
     </form>
 </div>

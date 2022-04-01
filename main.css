@@ -1,13 +1,20 @@
 body{
-    background-color: black;
+    background-color: rgb(24, 22, 22);
     color: white;
 }
 .btn-green{
-    background-color: #39ff14 ;
+    background-color: #31d115 ;
     color: antiquewhite;
     padding: 0.5em;
     border-radius: 0.5em;
     font-size: 1.1em;
+}
+.btn-white{
+    background-color:antiquewhite;
+    color: #31d115 ;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 0.8em;
 }
 .m-5{
     margin: 0.5em;
@@ -16,7 +23,7 @@ body{
     color: red;
 }
 .green{
-    color: #39ff14 ;
+    color: #31d115 ;
 }
 .btn-clignote  {
 animation-duration: 2s;
